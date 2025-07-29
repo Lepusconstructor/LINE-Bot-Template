@@ -67,14 +67,14 @@ class Check_bot_api(SettingBase):
         self.client.post(
             url_for("callback"),
             headers=self.set_signature(),
-            data=self.set_message("9527 早"),
+            data=self.set_message("教練 早"),
             content_type="application/json",
         )
 
         self.client.post(
             url_for("callback"),
             headers=self.set_signature(),
-            data=self.set_message("9527 請假"),
+            data=self.set_message("教練 請假"),
             content_type="application/json",
         )
 

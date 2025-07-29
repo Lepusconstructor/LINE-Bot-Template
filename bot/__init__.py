@@ -44,7 +44,7 @@ def create_app():
     @handler.add(MessageEvent, message=TextMessage)
     def handle_message(event):
         user_msg = event.message.text
-        if user_msg.find("9527") != -1:
+        if user_msg.find("教練") != -1:
 
             timesmap = datetime.now().strftime("%Y-%m-%d %H:%M")
             user_id = event.source.user_id
