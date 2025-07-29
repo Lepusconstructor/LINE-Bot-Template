@@ -14,4 +14,4 @@ ADD . /app
 
 # run the command to start uWSGI
 # CMD uwsgi --ini app.ini
-CMD ["uwsgi", "app.ini"]
+CMD ["pyuwsgi", "app.ini"]
