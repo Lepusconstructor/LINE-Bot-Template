@@ -22,8 +22,8 @@ def create_app():
     gss_client = pygsheets.authorize(service_file=google_sheet_gcp_key_path)
     google_sheet = gss_client.open_by_url(os.environ.get("google_sheet_url")).sheet1
 
-    line_bot_api = LineBotApi(os.environ.get("CHANNEL_ACCESS_TOKEN"))
-    handler = WebhookHandler(os.environ.get("CHANNEL_SECRET"))
+    line_bot_api = LineBotApi(os.environ.get("CUwMKtzcDLh789pFzhULiP2PW2AmApQvj23AOrhm2uoIDwdhd0yMAiU5fMYZcKpsuQOHt58eS5zlQ+7BgEefzqFgSTO+FD4mxfFH039n9a8v+whIjVktCtt6cPnYmidXEOjOemCj3KqiyF/aVU5wegdB04t89/1O/w1cDnyilFU="))
+    handler = WebhookHandler(os.environ.get("5b24ed53175b79e9bcff1ee8d4cd3f4f"))
 
     @app.route("/", methods=["GET", "POST"])
     def callback():
